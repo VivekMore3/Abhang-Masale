@@ -1,21 +1,21 @@
 package com.main.entities;
 
 public class Login {
- Integer phoneNumber;
+ String phoneNumber;
  String password;
 public Login() {
 	super();
 	// TODO Auto-generated constructor stub
 }
-public Login(Integer phoneNumber, String password) {
+public Login(String phoneNumber, String password) {
 	super();
 	this.phoneNumber = phoneNumber;
 	this.password = password;
 }
-public Integer getPhoneNumber() {
+public String getPhoneNumber() {
 	return phoneNumber;
 }
-public void setPhoneNumber(Integer phoneNumber) {
+public void setPhoneNumber(String phoneNumber) {
 	this.phoneNumber = phoneNumber;
 }
 public String getPassword() {

@@ -21,7 +21,7 @@ public class UserMaster {
     private String lastName;
 
     @Column(name = "mobile_number")
-    private Integer mobileNumber;
+    private String mobileNumber;
 
     @Column(name = "email_id")
     private String emailId;
@@ -40,7 +40,7 @@ public class UserMaster {
     }
 
     // All-arg constructor
-    public UserMaster(Integer userIdInteger, String firstName, String lastName, Integer mobileNumber,
+    public UserMaster(Integer userIdInteger, String firstName, String lastName, String mobileNumber,
                       String emailId, String address, Character gender, String password) {
         this.userId = userIdInteger;
         this.firstName = firstName;
@@ -91,11 +91,11 @@ public class UserMaster {
 		this.lastName = lastName;
 	}
 
-	public Integer getMobileNumber() {
+	public String getMobileNumber() {
 		return mobileNumber;
 	}
 
-	public void setMobileNumber(Integer mobileNumber) {
+	public void setMobileNumber(String mobileNumber) {
 		this.mobileNumber = mobileNumber;
 	}
 

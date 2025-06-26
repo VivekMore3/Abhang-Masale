@@ -22,7 +22,7 @@ public class AdminLogin {
 	
 	@GetMapping("/login")
 	public boolean login(@RequestBody Login login) {
-		if(login.getPhoneNumber()==12345678 && login.getPassword().equals("")) {
+		if(login.getPhoneNumber().equals("12345678") && login.getPassword().equals("")) {
 			return true;
 		}
 		return false;
